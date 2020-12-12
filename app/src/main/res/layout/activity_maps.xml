@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EDEDED"
+    tools:context=".MapsActivity" >
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="650dp"
+   />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BNV"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:itemHorizontalTranslationEnabled="true"
+        android:background="@drawable/menu_bottom_navigation_view"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottom_navigation_view"
+        app:itemTextAppearanceActive="@style/Bottom_Navigation_View"/>
+</RelativeLayout>
